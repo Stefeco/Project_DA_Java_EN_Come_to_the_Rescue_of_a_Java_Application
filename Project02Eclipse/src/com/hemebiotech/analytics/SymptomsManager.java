@@ -19,6 +19,7 @@ public class SymptomsManager {
 	 * Function that reads the arrayList with the symptoms and adds the occurrences in the values of the HashMap
 	 * 
 	 * @param importedList is the arrayList built by the ReadSymptomDataFromFile method
+	 * @return SymptomCount as a HashMap with the names of the symptoms as indexes and the amount of the symptoms as values.
 	 */
 	public Map<String, Integer> ComputeResults(ArrayList<String> importedList) {
 		

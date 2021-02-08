@@ -25,6 +25,7 @@ public class SymptomsOutput {
 	 * then use the writer method to export the result in the result.out file.
 	 * 
 	 * @param symptoms is the HashMap created by the SymptomsManager class.
+	 *
 	 */
 	public Map<String, Integer> printSymptoms(Map<String, Integer> symptoms) {
 	
@@ -44,6 +45,7 @@ public class SymptomsOutput {
 			
 			/**
 			 * We run an iteration on sortedSymptoms to print them to an external file.
+			 * 
 			 */
 			for(Map.Entry<String, Integer> entry:sortedSymptoms.entrySet()) {
 				
