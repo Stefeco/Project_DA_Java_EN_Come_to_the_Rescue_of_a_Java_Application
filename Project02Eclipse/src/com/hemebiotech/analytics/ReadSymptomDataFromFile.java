@@ -7,7 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Simple brute force implementation
+ * This method reads an external txt file and adds all the symptoms in an ArrayList.
+ * it implements the Map interface ISymptomReader
  *
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
