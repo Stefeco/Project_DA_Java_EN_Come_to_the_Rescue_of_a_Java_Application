@@ -11,7 +11,7 @@ import java.util.Map;
  * @author ecste
  *
  */
-public class SymptomsOutput {
+public class SymptomsOutput implements ISymptomsOutput {
 	
 	/**
 	 * The constructor for the SymptomsOutput class.
@@ -28,7 +28,10 @@ public class SymptomsOutput {
 	 *
 	 */
 	public Map<String, Integer> printSymptoms(Map<String, Integer> symptoms) {
-	
+
+		/**
+		 * Another constructor as a TreeMap to sort the list of symptoms in an alphabetical order.
+		 */
 		Map<String, Integer> Symptoms = new TreeMap<String, Integer>();
 		
 		FileWriter writer;

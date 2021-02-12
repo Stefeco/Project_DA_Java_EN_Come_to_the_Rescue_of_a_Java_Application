@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class SymptomsManager {
+public class SymptomsManager implements ISymptomsManager {
 	/**
 	 * Date : february 2 2021
 	 * @author ecste
@@ -21,6 +21,7 @@ public class SymptomsManager {
 	 * @param importedList is the arrayList built by the ReadSymptomDataFromFile method
 	 * @return SymptomCount as a HashMap with the names of the symptoms as indexes and the amount of the symptoms as values.
 	 */
+	@Override
 	public Map<String, Integer> ComputeResults(ArrayList<String> importedList) {
 		
 		List<String> symptomList = new ArrayList<>(importedList);
@@ -43,6 +44,8 @@ public class SymptomsManager {
 		return(SymptomCount);
 		
 		}
+
+
 
 }
 
