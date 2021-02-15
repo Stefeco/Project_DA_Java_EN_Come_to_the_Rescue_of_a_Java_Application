@@ -38,6 +38,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 				}
 				reader.close();
 			} catch (IOException e) {
+				System.out.println("There was a problem reading the file, please check if the file is in the correct folder");
 				e.printStackTrace();
 			}
 		}

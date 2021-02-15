@@ -60,8 +60,10 @@ public class SymptomsOutput implements ISymptomsOutput {
 			writer.close();
 			
 		} catch (IOException e) {
+			System.out.println("There has been an error when creating the output file");
 			e.printStackTrace();
-		}
+		} 
+		
 		return Symptoms;
 		
 	}
